@@ -1,0 +1,456 @@
+/* ---------- General Styles ---------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 10px;
+    font-family: "Alegreya sans", monospace, "sans serif";
+    
+    color: rgb(85, 85, 85);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Alegreya";
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  body {
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+
+  
+  /* ---------- Header ---------- */
+ 
+  header {
+    
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    width: 100vw;
+    
+    background: transparent;
+    
+  }
+
+  #logo1 {
+    width: 138px;
+    height: 77px;
+    background: transparent;
+  }
+
+  #logo2 {
+    display: none;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .menuItem {
+    padding: 10px 20px 0px 10px;
+
+    list-style-type: none;
+    font-family: Alegreya;
+    font-size: 2rem;
+    color: white;
+  }
+
+  /* ---------- Nav Scrolling Active ---------- */
+
+  .scroll-active nav {
+    background-color: white;
+    width: 100vw;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+    transition: background-color 1s ease;
+  }
+
+  .scroll-active nav a {
+    color: rgb(85, 85, 85);
+  }
+
+  .scroll-active #logo1 {
+    display: none;
+  }
+
+  .scroll-active #logo2 {
+    width: 138px;
+    height: 77px;
+    background: transparent;
+    display: inline-block;
+  }
+
+
+
+  /* ---------- Banner ---------- */
+  
+  .bannerContainer {
+    position: relative;
+    width: 100vw;
+    
+    overflow: hidden;
+    display: flex;
+    align-content: center;
+  }
+
+  .banner {
+    width: 100vw;
+    height: auto;
+    z-index: 0;
+    display: block;
+  }
+
+  .banner-overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.2);
+    background-size: cover;
+  }
+
+  .fa-angle-left {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    z-index: 2;
+    transform: translateY(-50%);
+
+    color: white;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    border-radius: 5rem;
+    padding: 1rem;
+    transition: font-size 0.4s;
+  }
+
+  a .fa-angle-left:hover {
+    font-size: 3rem;
+  }
+
+  .fa-angle-right {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    color: white;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    border-radius: 5rem;
+    padding: 1rem;
+    transition: font-size 0.4s;
+  }
+
+  a .fa-angle-right:hover {
+    font-size: 3rem;
+  }
+
+
+
+  /* ---------- USP ---------- */
+  .USP {
+    margin: 0px auto;
+
+  }
+
+  .USP h2 {
+    width: 100vw;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .USP-container {
+    
+    
+  }
+
+  .USP-content-container {
+    width: 30vw;
+    text-align: jusitfy;
+    padding: 1rem;
+    margin: 1rem;
+    float: left;
+  }
+
+  .USP h3 {
+    text-align: center;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .USP p {
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 900px) {
+    .USP {
+      width: 90rem;
+    }
+  }
+
+
+
+  /* ---------- Portfolio ---------- */
+  
+  .portfolio h2 {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  /* ----- grid 1 ------ */
+  .grid-container-1 {
+    display: grid;
+    width: 100vw;
+    height: 64rem;
+    gap: 3px;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 3px;
+  }
+
+  .grid-item-container-1 {
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  #grid-item-1 {
+    height: 640px;
+    width: auto;
+    display: block;
+    margin-right: 50%;
+    transform: translateX(-14%);
+  }
+
+  .grid-item-container-2 {
+    overflow: scroll;
+    text-align: justify;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin: auto 0px;
+  }
+
+  #grid-item-2 {
+    padding: 2rem;
+    background-color: rgba(120, 170, 115, 0.37);
+    text-align: center;
+    height: 318.5px;
+    padding-top: 35%;
+  }
+
+  .grid-item-container-3 {
+    overflow: hidden;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  #grid-item-3 {
+    height: 318.5px;
+    width: auto;
+  }
+
+  .grid-item-container-4 {
+    overflow: hidden;
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+  }
+
+  #grid-item-4 {
+    width: 50vw;
+    height: 318.5px;
+  }
+
+  /* ----- grid 2 ------ */
+  .grid-container-2 {
+    display: grid;
+    width: 100vw;
+    height: 92rem;
+    gap: 3px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    margin-bottom: 3px;
+    transform: translateX(-2px);
+  }
+
+  .grid-item-container-5 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 4;
+    text-align: justify;
+    background-color: rgb(218, 203, 218);
+  }
+
+  .grid-item-container-5 h3 {
+    padding-top: 10rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #grid-item-5 {
+    height: 46rem;
+    width: auto;
+    text-align: center;
+    padding: 2rem;
+    line-height: 3rem;
+  }
+
+  .grid-item-container-5 a {
+    color: rgb(85, 85, 85);
+    border: 1px soldid rgb(85, 85, 85);
+
+  }
+
+  .grid-item-container-6 {
+    overflow: hidden;
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+  }
+
+  #grid-item-6 {
+    height: 51rem;
+    transform: translateY(-8%) translateX(-6%);
+  }
+
+  .grid-item-container-7 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+
+  #grid-item-7 {
+    height: 304px;
+    width: auto;
+    background-color: rgb(194, 217, 219);
+    text-align: center;
+    padding: 3rem;
+    padding-top: 13%;
+    line-height: 3rem;
+  }
+
+  .grid-item-container-8 {
+    overflow: hidden;
+    grid-column: 3 / 5;
+    grid-row: 4 / 7;
+  }
+
+  #grid-item-8 {
+    width: auto;
+    height: 46rem;
+  }
+
+  .grid-item-container-9 {
+    overflow: hidden;
+    grid-column: 1 / 3;
+    grid-row: 3 / 7;
+  }
+
+  #grid-item-9 {
+    width: auto;
+    height: 90rem;
+    
+  }
+
+
+
+   /* ---------- Footer ---------- */
+  
+   .socialmedia {
+     width: 100vw;
+     height: 20rem;
+     text-align: center;
+   }
+
+   footer h3 {
+     font-size: 2rem;
+     padding-top: 5rem;
+   }
+
+   footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   }
+
+   footer ul li {
+    list-style-type: none;
+    margin: 3rem 5px 0px 5px;
+   }
+
+   /* ----- footer menu ----- */
+
+   .footer-menu {
+     display: flex;
+     flex-direction: row;
+     margin: 0px auto;
+     background-color: rgba(120, 170, 115, 0.37);
+   }
+
+   .menu-container {
+     width: 33%;
+     display: flex;
+     flex-direction: column;
+     justify-items: center;
+   }
+
+   .menu-container h3 {
+     font-size: 2rem;
+     text-align: left;
+     margin-bottom: 5px;
+     margin-left: 13rem;
+   }
+
+   .menu-container a {
+     font-size: 1.8rem;
+     text-align: left;
+     padding-top: 7px;
+     margin-left: 13rem;
+   }
+
+   .menu-container p {
+    margin-left: 13rem;
+    padding-top: 7px;
+   }
+
+   /* ----- Copyright ----- */
+
+   .copyright {
+    background-color: rgba(120, 170, 115, 0.37);
+    padding-top: 3rem;
+   }
+
+   .copyright p {
+     padding: 2rem;
+   }
+
+   .copyright span {
+     font-weight: bold;
+   }
+
