@@ -1,3 +1,5 @@
+
+
 /* ---------- General Styles ---------- */
 
 * {
@@ -7,7 +9,7 @@
   }
   
   html {
-    font-size: 10px;
+    font-size: 62.5%;
     font-family: "Alegreya sans", monospace, "sans serif";
     
     color: rgb(85, 85, 85);
@@ -26,8 +28,14 @@
     text-decoration: none;
   }
 
+  a:visited,
+  a:active,
+  a:link {
+    color: white;
+}
+
   body {
-    overflow-x: hidden;
+    
     width: 100vw;
     height: 100vh;
   }
@@ -36,8 +44,8 @@
   
   /* ---------- Header ---------- */
  
-  header {
-    
+  #navbar {
+    overflow: hidden;
   }
 
   nav {
@@ -173,13 +181,8 @@
 
 
   /* ---------- USP ---------- */
-  .USP {
-    margin: 0px auto;
-
-  }
 
   .USP h2 {
-    width: 100vw;
     margin-top: 5rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -187,8 +190,8 @@
   }
 
   .USP-container {
-    
-    
+    display: flex;
+    flex-direction: row;
   }
 
   .USP-content-container {
@@ -196,7 +199,6 @@
     text-align: jusitfy;
     padding: 1rem;
     margin: 1rem;
-    float: left;
   }
 
   .USP h3 {
@@ -207,12 +209,6 @@
 
   .USP p {
     text-align: center;
-  }
-
-  @media only screen and (min-width: 900px) {
-    .USP {
-      width: 90rem;
-    }
   }
 
 
@@ -434,6 +430,12 @@
      margin-left: 13rem;
    }
 
+   .menu-container a:visited,
+   a:active,
+   a:link {
+     color: rgb(85, 85, 85)
+   }
+
    .menu-container p {
     margin-left: 13rem;
     padding-top: 7px;
@@ -454,3 +456,8 @@
      font-weight: bold;
    }
 
+
+
+   /* ----------- @ media queries ---------- */
+
+   
