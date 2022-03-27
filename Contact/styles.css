@@ -140,6 +140,24 @@ nav ul {
 }
 
 
+/* ---------- Contact ---------- */
+
+.contact {
+  width: 75vw;
+  margin: 5rem auto 10rem auto;
+  text-align: center;
+}
+.contact h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.contact p {
+  margin-top: 1rem;;
+  text-align: center;
+  line-height: 3.2rem;
+}
+
 
 /* ---------- Form ---------- */
 
@@ -215,14 +233,10 @@ form p {
     margin-right: 1rem;
 }
 
-
-
-
-
-
-
-
-
+.address-container {
+  display: flex;
+  flex-direction: column;
+}
 
 
 /* ---------- Footer ---------- */
@@ -282,9 +296,8 @@ form p {
     margin-left: 13rem;
   }
 
-  .menu-container a:visited,
-  a:active,
-  a:link {
+  .menuLink:active,
+  .menuLink:link, .menuLink:visited {
     color: rgb(85, 85, 85)
   }
 
