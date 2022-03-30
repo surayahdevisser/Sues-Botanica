@@ -301,6 +301,10 @@ form p {
     color: rgb(85, 85, 85)
   }
 
+  .menuLink:hover {
+    color: #48bbb0;
+  }
+
   .menu-container p {
    margin-left: 13rem;
    padding-top: 7px;

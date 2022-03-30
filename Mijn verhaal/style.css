@@ -186,6 +186,16 @@ nav ul {
     color: white;
 }
 
+.overMij-text h2 {
+    font-size: 3rem;
+}
+
+.overMij-text p {
+    line-height: 3rem;
+    padding: 4rem;
+    font-weight: lighter;
+}
+
 
 
 /* ---------- Footer ---------- */
@@ -193,7 +203,7 @@ nav ul {
 .socialmedia {
     width: 100vw;
     height: 20rem;
-    margin-top: 6rem;
+    margin-top: 4rem;
     text-align: center;
     
   }
