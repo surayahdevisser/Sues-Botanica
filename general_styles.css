@@ -1,0 +1,126 @@
+/* ---------- General Styles ---------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+    font-family: "Alegreya sans", monospace, "sans serif";
+    
+    color: rgb(85, 85, 85);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Alegreya";
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a:visited,
+  a:active,
+  a:link {
+    color: white;
+}
+
+  body {
+    
+    width: 100vw;
+    height: 100vh;
+  }
+
+
+
+  
+  /* ---------- Footer ---------- */
+  
+  .socialmedia {
+    width: 100vw;
+    height: 20rem;
+    text-align: center;
+  }
+
+  footer h3 {
+    font-size: 2rem;
+    padding-top: 5rem;
+  }
+
+  footer ul {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+  }
+
+  footer ul li {
+   list-style-type: none;
+   margin: 3rem 5px 0px 5px;
+  }
+
+  /* ----- footer menu ----- */
+
+  .footer-menu {
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+    background-color: rgba(120, 170, 115, 0.37);
+  }
+
+  .menu-container {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  .menu-container h3 {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-left: 13rem;
+  }
+
+  .menu-container a {
+    font-size: 1.8rem;
+    text-align: left;
+    padding-top: 7px;
+    margin-left: 13rem;
+  }
+
+  .menuLink:active,
+  .menuLink:link, .menuLink:visited {
+    color: rgb(85, 85, 85)
+  }
+
+  .menuLink:hover {
+   color: #48bbb0;
+ }
+
+  .menu-container p {
+   margin-left: 13rem;
+   padding-top: 7px;
+  }
+
+  /* ----- Copyright ----- */
+
+  .copyright {
+   background-color: rgba(120, 170, 115, 0.37);
+   padding-top: 3rem;
+  }
+
+  .copyright p {
+    padding: 2rem;
+  }
+
+  .copyright span {
+    font-weight: bold;
+  }

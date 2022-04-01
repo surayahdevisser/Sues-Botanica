@@ -183,7 +183,7 @@
   /* ---------- USP ---------- */
 
   .USP h2 {
-    margin-top: 10rem;
+    margin-top: 7rem;
     margin-bottom: 2rem;
     text-align: center;
     font-size: 3rem;
@@ -213,34 +213,16 @@
     text-align: center;
   }
 
-
-
- /* ---------- Quote ---------- */
-
- .quote {
-   background-image: url(../Homepage/Images/bloesem-1200x800.png);
-   background-repeat: no-repeat;
-   width: 100vw;
-   height: 27rem;
-   transform: translateY(-5rem);
- }
-
- .quote div {
-  margin: 0px auto;
- }
-
- .quote p {
-   
-   color: white;
- }
-
+  .textLink:link {
+    color: #48bbb0;
+  }
 
 
 
   /* ---------- Portfolio ---------- */
   
   .portfolio h2 {
-    margin-top: 10rem;
+    margin-top: 7rem;
     margin-bottom: 3rem;
     text-align: center;
     font-size: 3rem;
