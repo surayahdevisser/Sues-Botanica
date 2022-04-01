@@ -125,7 +125,8 @@ nav ul {
     height: auto;
     z-index: 0;
     display: block;
-    transform: translateY(-45em);
+    transform: translateY(-30rem);
+   
 }
 
 .banner-overlay {
@@ -140,122 +141,89 @@ nav ul {
 }
 
 
-/* ---------- Mijn verhaal ---------- */
 
-.mijnVerhaal {
+/* ---------- Bruidsbloemen ---------- */
+
+.bruidsbloemen-container {
+    text-align: center;
     width: 75vw;
-    margin: 7rem auto 10rem auto;
+    margin: 7rem auto 9rem auto;
 }
 
-.mijnVerhaal h1 {
+.bruidsbloemen-container h1 {
+    font-family: "Rouge script";
     font-size: 4rem;
-    text-align: center;
-  }
-  
-  .mijnVerhaal p {
-    margin-top: 1rem;;
-    text-align: center;
-    line-height: 3.2rem;
-  }
-
-  .italics {
-      font-style: italic;
-  }
-
-  .bold {
-    font-weight: bold;
-  }
-
-
-  /* ---------- Over mij ---------- */
-
-  .overMij {
-      display: flex;
-      flex-direction: row;
-      height: 50rem;
-  }
-
-.overMij-foto {
-    width: 60vw;
-    overflow: hidden;
 }
 
-.overMij-foto img {
-    width: 60vw;
-}
-
-.overMij-text {
-    width: 40vw;
-    background-color: rgb(106, 110, 129);
-    color: white;
-    font-weight: lighter;
-}
-
-.overMij-text h2 {
+.bruidsbloemen-container h2 {
     font-size: 3rem;
-    padding-top: 4rem;
-    padding-left: 4rem;
 }
 
-.overMij-text p {
-    line-height: 2.5rem;
-    padding: 2rem 4rem 4rem 4rem;
-    font-weight: lighter;
+.bruidsbloemen-container p {
+    line-height: 3.2rem;
+    margin-top: 1rem;
 }
 
+figure {
+    height: 80rem;
+    overflow: hidden;
+    position: relative;
+}
 
-  /* ---------- USP ---------- */
-
-  .USP-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 7rem;
-    margin-bottom: 9rem;
-  }
-
-  .USP-content-container {
-    width: 30vw;
+figcaption {
+    color: white;
+    font-size: 1.6rem;
+    z-index: 1;
     
-    padding: 1rem;
-    margin: 1rem;
-  }
-
-  .USP h3 {
-    text-align: center;
-    padding-bottom: 0.5rem;
-    font-size: 2rem;
-  }
-
-  .USP p {
-    text-align: center;
-  }
-
-
- /* ---------- Quote ---------- */
-
- .quote-container {
-  background-image: url(../Mijn_verhaal/Images/bloesem-1200x800.png);
-  width: 100vw;
-  height: 27rem;
 }
 
-.quote-content-container {
- margin: 0px auto;
+img {
+    width: 100vw;
+    height: auto;
+    z-index: 0;
 }
 
-.quote {
-  font-family: Alegreya;
-  font-size: 3rem;
-  color: white;
-  text-align: center;
+.pic-1 figcaption {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
 }
 
-.quote-author {
-  color: white;
-  text-align: center;
-  
+.pic-1 img {
+    transform: translateY(-10rem);
 }
+
+.pic-2 figcaption {
+    position: absolute;
+    left: 1rem;
+    bottom: 6rem;
+}
+
+.pic-2 img {
+    transform: translateY(-10rem);
+}
+
+.pic-3 figcaption {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+.pic-3 img {
+    transform: translateY(-10rem);
+}
+
+
+/* ---------- Bruidswerk portfolio ---------- */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6) 1fr;
+    grid-template-rows: repeat(6) 1fr;
+    gap: 3px;
+}
+
+
 
 
 
@@ -272,7 +240,7 @@ nav ul {
 
   footer h3 {
     font-size: 2rem;
-    padding-top: 5rem;
+    padding-top: 4rem;
   }
 
   footer ul {
