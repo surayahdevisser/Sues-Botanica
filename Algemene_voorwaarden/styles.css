@@ -1,0 +1,60 @@
+
+
+/*---------- Algemene voorwaarden ----------*/
+
+.algemeneVoorwaarden {
+    width: 65vw;
+    margin: 7rem auto;
+}
+
+h2 {
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    font-family: "Alegreya sans";
+    font-size: 2rem;
+    text-align: start;
+}
+
+.algemeneVoorwaarden p {
+    text-align: justify;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1rem;
+}
+
+li {
+    text-align: justify;
+}
+
+.white:link,
+.white:active,
+.white:visited {
+    color: rgb(85, 85, 85);
+}
+
+.white:link:hover {
+    color: #48bbb0;
+}
+
+#inhoudsopgave li{
+    list-style: none;
+}
+
+#aanbod ul li,
+#duurtransacties ul li {
+    list-style-type: disc;
+}
+
+/*---------- Footer ----------*/
+.socialmedia {
+    background-color: rgba(120, 170, 115, 0.37);
+}
+
+.footer-menu,
+.copyright {
+    background-color: white;
+}
+
+
+
+

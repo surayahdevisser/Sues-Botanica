@@ -1,43 +1,171 @@
+
+
 /* ---------- General Styles ---------- */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Alegreya sans", "monospace", "sans serif";
+  text-align: center;
+  color: rgb(85, 85, 85);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Alegreya";
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p, li {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
   
-  html {
-    font-size: 62.5%;
-    font-family: "Alegreya sans", monospace, "sans serif";
-    
-    color: rgb(85, 85, 85);
-  }
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: "Alegreya";
-  }
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
 
-  p {
-    font-size: 1.8rem;
-  }
-
-  a {
-    cursor: pointer;
-    text-decoration: none;
-  }
-
-  a:visited,
-  a:active,
-  a:link {
+a:visited,
+a:active,
+a:link {
     color: white;
 }
 
-  body {
-    
-    width: 100vw;
-    height: 100vh;
-  }
+body {
+  width: 100vw;
+  height: 100vh;
+}
 
+
+
+
+/* ---------- Styles ---------- */
+
+.italics {
+  font-style: italic;
+}
+
+.bold {
+font-weight: bold;
+}
+
+
+/* ---------- Header ---------- */
+
+header {
+  
+}
+
+nav {
+display: flex;
+flex-direction: row;
+align-items: center;
+position: fixed;
+z-index: 3;
+width: 100vw;
+
+background: transparent;
+
+}
+
+#logo1 {
+width: 138px;
+height: 77px;
+background: transparent;
+}
+
+#logo2 {
+display: none;
+}
+
+nav ul {
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+.menuItem {
+padding: 10px 20px 0px 10px;
+
+list-style-type: none;
+font-family: Alegreya;
+font-size: 2rem;
+color: white !important;
+}
+
+
+
+/* ---------- Nav Scrolling Active ---------- */
+
+.scroll-active nav {
+background-color: white;
+width: 100vw;
+box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+transition: background-color 1s ease;
+}
+
+.scroll-active nav a {
+color: rgb(85, 85, 85);
+}
+
+.scroll-active #logo1 {
+display: none;
+}
+
+.scroll-active #logo2 {
+width: 138px;
+height: 77px;
+background: transparent;
+display: inline-block;
+}
+
+
+/* ---------- Banner ---------- */
+
+.bannerContainer {
+  position: relative;
+  width: 100vw;
+  height: 16rem;
+  
+  overflow: hidden;
+}
+
+.banner {
+  width: 100vw;
+  height: auto;
+  z-index: 0;
+  display: block;
+  transform: translateY(-18em);
+}
+
+.banner-overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.2);
+  background-size: cover; 
+}
 
 
   
@@ -107,7 +235,11 @@
 
   .menu-container p {
    margin-left: 13rem;
-   padding-top: 7px;
+   text-align: start;
+  }
+
+  .menu-container p:last-child {
+    transform: translateY(-4px);
   }
 
   /* ----- Copyright ----- */
@@ -115,6 +247,7 @@
   .copyright {
    background-color: rgba(120, 170, 115, 0.37);
    padding-top: 3rem;
+   text-align: start;
   }
 
   .copyright p {

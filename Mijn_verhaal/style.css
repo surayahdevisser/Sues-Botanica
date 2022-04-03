@@ -1,142 +1,7 @@
-/* ---------- General Styles ---------- */
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 62.5%;
-    font-family: "Alegreya sans", monospace, "sans serif";
-    
-    color: rgb(85, 85, 85);
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: "Alegreya";
-  }
-
-  p {
-    font-size: 1.8rem;
-  }
-
-  a {
-    cursor: pointer;
-    text-decoration: none;
-  }
-
-  a:visited,
-  a:active,
-  a:link {
-      color: white;
-  }
-
- 
-
-  body {
-    width: 100vw;
-    height: 100vh;
-  }
-
-
-  /* ---------- Header ---------- */
- 
-  header {
-    
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: fixed;
-  z-index: 3;
-  width: 100vw;
-  
-  background: transparent;
-  
-}
-
-#logo1 {
-  width: 138px;
-  height: 77px;
-  background: transparent;
-}
-
-#logo2 {
-  display: none;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.menuItem {
-  padding: 10px 20px 0px 10px;
-
-  list-style-type: none;
-  font-family: Alegreya;
-  font-size: 2rem;
-  color: white;
-}
-
-
-
-/* ---------- Nav Scrolling Active ---------- */
-
-.scroll-active nav {
-  background-color: white;
-  width: 100vw;
-  box-shadow: 0 3px 1rem rgba(0,0,0,.1);
-  transition: background-color 1s ease;
-}
-
-.scroll-active nav a {
-  color: rgb(85, 85, 85);
-}
-
-.scroll-active #logo1 {
-  display: none;
-}
-
-.scroll-active #logo2 {
-  width: 138px;
-  height: 77px;
-  background: transparent;
-  display: inline-block;
-}
-
 
 /* ---------- Banner ---------- */
-
-.bannerContainer {
-    position: relative;
-    width: 100vw;
-    height: 16rem;
-    
-    overflow: hidden;
-  }
-
 .banner {
-    width: 100vw;
-    height: auto;
-    z-index: 0;
-    display: block;
-    transform: translateY(-45em);
-}
-
-.banner-overlay {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0,0,0,0.2);
-    background-size: cover; 
+  transform: translateY(-45rem);
 }
 
 
@@ -146,24 +11,13 @@ nav ul {
     width: 75vw;
     margin: 7rem auto 10rem auto;
 }
-
-.mijnVerhaal h1 {
-    font-size: 4rem;
-    text-align: center;
-  }
   
   .mijnVerhaal p {
     margin-top: 1rem;
-    text-align: center;
-    line-height: 3.2rem;
   }
 
-  .italics {
-      font-style: italic;
-  }
-
-  .bold {
-    font-weight: bold;
+  .mijnVerhaal-container p:last-child {
+    margin-top: 3rem;
   }
 
 
@@ -188,19 +42,19 @@ nav ul {
     width: 40vw;
     background-color: rgb(106, 110, 129);
     color: white;
-    font-weight: lighter;
 }
 
 .overMij-text h2 {
-    font-size: 3rem;
     padding-top: 6rem;
     padding-left: 4rem;
+    text-align: start;
 }
 
 .overMij-text p {
     line-height: 2.5rem;
     padding: 2rem 4rem 4rem 4rem;
     font-weight: lighter;
+    text-align: start;
 }
 
 
@@ -211,24 +65,17 @@ nav ul {
     flex-direction: row;
     justify-content: center;
     margin-top: 7rem;
-    margin-bottom: 9rem;
+    margin-bottom: 6rem;
   }
 
   .USP-content-container {
     width: 30vw;
-    
     padding: 1rem;
     margin: 1rem;
   }
 
   .USP h3 {
-    text-align: center;
     padding-bottom: 0.5rem;
-    font-size: 2rem;
-  }
-
-  .USP p {
-    text-align: center;
   }
 
 
@@ -264,101 +111,9 @@ nav ul {
   font-family: Alegreya;
   font-size: 3rem;
   color: white;
-  text-align: center;
   padding-top: 8%;
 }
 
 .quote-author {
   color: white;
-  text-align: center;
-  
 }
-
-
-
-
-/* ---------- Footer ---------- */
-  
-.socialmedia {
-    width: 100vw;
-    height: 20rem;
-    margin-top: 2rem;
-    text-align: center;
-    
-  }
-
-  footer h3 {
-    font-size: 2rem;
-    padding-top: 4rem;
-  }
-
-  footer ul {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-  }
-
-  footer ul li {
-   list-style-type: none;
-   margin: 3rem 5px 0px 5px;
-  }
-
-  /* ----- footer menu ----- */
-
-  .footer-menu {
-    display: flex;
-    flex-direction: row;
-    margin: 0px auto;
-    background-color: rgba(120, 170, 115, 0.37);
-  }
-
-  .menu-container {
-    width: 33%;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-  }
-
-  .menu-container h3 {
-    font-size: 2rem;
-    text-align: left;
-    margin-bottom: 5px;
-    margin-left: 13rem;
-  }
-
-  .menu-container a {
-    font-size: 1.8rem;
-    text-align: left;
-    padding-top: 7px;
-    margin-left: 13rem;
-  }
-
-  .menuLink:active,
-  .menuLink:link, .menuLink:visited {
-    color: rgb(85, 85, 85)
-  }
-
-  .menuLink:hover {
-    color: #48bbb0;
-  }
-
-  .menu-container p {
-   margin-left: 13rem;
-   padding-top: 7px;
-  }
-
-  /* ----- Copyright ----- */
-
-  .copyright {
-   padding-top: 3rem;
-   background-color: rgba(120, 170, 115, 0.37);
-  }
-
-  .copyright p {
-    padding: 2rem;
-  }
-
-  .copyright span {
-    font-weight: bold;
-  }

@@ -1,0 +1,75 @@
+/*---------- Banner ----------*/
+.banner {
+    transform: translateY(-35rem);
+}
+
+
+
+/*---------- Algemene voorwaarden ----------*/
+
+.algemeneVoorwaarden {
+    width: 65vw;
+    margin: 7rem auto;
+}
+
+h2 {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    text-align: start;
+}
+
+h3 {
+    font-family: "Alegreya sans";
+    text-align: start;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    text-align: justify;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    text-align: justify;
+}
+
+.white:link,
+.white:active,
+.white:visited {
+    color: rgb(85, 85, 85);
+}
+
+.white:hover,
+.white:link:hover {
+    color: #48bbb0;
+}
+
+#inhoudsopgave li{
+    list-style: none;
+}
+
+ul li {
+    list-style-type: disc;
+}
+
+/*---------- Footer ----------*/
+.socialmedia {
+    background-color: rgba(120, 170, 115, 0.37);
+}
+
+.socialmedia h3 {
+    text-align: center;
+}
+
+.footer-menu,
+.copyright {
+    background-color: white;
+}
+
+.footer-menu p {
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
