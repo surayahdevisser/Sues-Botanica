@@ -24,6 +24,7 @@ form {
     display: flex;
     flex-direction: column;
     width: 47rem;
+    margin-bottom: 7rem;
 }
 
 label {
@@ -31,6 +32,7 @@ label {
     font-weight: bold;
     font-size: 1.6rem;
     margin-bottom: .6rem;
+    text-align: start;
 }
 
 #naam, #email, #bedrijf, #telefoon {
@@ -64,6 +66,7 @@ button {
 
 form p {
     margin-top: 4rem;
+    text-align: start;
 }
 
 
@@ -100,6 +103,10 @@ form p {
 
 /* ---------- Footer ---------- */
 
-.footer-menu .copyright {
+.socialmedia {
+  background-color: rgba(120, 170, 115, 0.37);
+}
+
+.footer-menu, .copyright {
   background-color: white !important;
 }

@@ -15,6 +15,7 @@
 
 .bruidsbloemen-container h1 {
     font-family: "Rouge script";
+    font-size: 6rem;
 }
 
 .bruidsbloemen-container p {
@@ -67,6 +68,10 @@ img {
 
 .pic-3 img {
     transform: translateY(-10rem);
+}
+
+.kosten {
+    margin-top: 4rem;
 }
 
 

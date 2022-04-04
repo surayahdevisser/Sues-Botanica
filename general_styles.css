@@ -32,10 +32,9 @@ h3 {
   font-size: 2rem;
 }
 
-p, li {
+p, li  {
   font-size: 1.8rem;
   line-height: 3.2rem;
-  
 }
 
 a {
@@ -191,7 +190,11 @@ display: inline-block;
 
   footer ul li {
    list-style-type: none;
-   margin: 3rem 5px 0px 5px;
+   margin: 2rem 5px 0px 5px;
+  }
+
+  .socialmedia i {
+    font-size: 4rem;
   }
 
   /* ----- footer menu ----- */
