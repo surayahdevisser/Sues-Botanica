@@ -87,6 +87,7 @@ img .boeketten {
 }
 
 .hosting-icon {
+    display: none;
     width: 30rem;
     margin-top: 2rem;
 }

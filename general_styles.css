@@ -17,6 +17,7 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Alegreya";
+  margin-bottom: 1rem;
 }
 
 h1 {
@@ -53,9 +54,6 @@ body {
   height: 100vh;
 }
 
-
-
-
 /* ---------- Styles ---------- */
 
 .italics {
@@ -67,11 +65,8 @@ font-weight: bold;
 }
 
 
-/* ---------- Header ---------- */
 
-header {
-  
-}
+/* ---------- Header ---------- */
 
 nav {
 display: flex;
@@ -80,9 +75,7 @@ align-items: center;
 position: fixed;
 z-index: 3;
 width: 100vw;
-
 background: transparent;
-
 }
 
 #logo1 {
@@ -102,15 +95,12 @@ align-items: center;
 }
 
 .menuItem {
-padding: 10px 20px 0px 10px;
-
+padding: 20px 20px 0px 10px;
 list-style-type: none;
 font-family: Alegreya;
 font-size: 2rem;
 color: white !important;
 }
-
-
 
 /* ---------- Nav Scrolling Active ---------- */
 
@@ -137,13 +127,13 @@ display: inline-block;
 }
 
 
+
 /* ---------- Banner ---------- */
 
 .bannerContainer {
   position: relative;
   width: 100vw;
   height: 16rem;
-  
   overflow: hidden;
 }
 
@@ -241,7 +231,7 @@ display: inline-block;
    text-align: start;
   }
 
-  .menu-container p:last-child {
+  .menu-container p:last-of-type {
     transform: translateY(-4px);
   }
 
