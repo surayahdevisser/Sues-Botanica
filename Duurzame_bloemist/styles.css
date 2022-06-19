@@ -1,3 +1,4 @@
+
 /*---------- Banner ----------*/
 .banner {
     transform: translateY(-35rem);
@@ -39,6 +40,10 @@
     padding-bottom: 5rem;
 }
 
+.lichtgroen {
+    background-color: rgba(120, 170, 115, 0.25);
+}
+
 
 .flex-container {
     display: flex;
@@ -75,7 +80,7 @@ img {
 }
 
 img .boeketten {
-    transform: translateX(-30rem);
+    transform: translateX(-50rem);
 }
 
 .verpakking {
